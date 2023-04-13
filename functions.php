@@ -24,6 +24,7 @@ function include_inc_files() {
 		'inc/setup/', // Theme setup.
 		'inc/shortcodes/', // Load shortcodes.
 		'inc/template-tags/', // Custom template tags for this theme.
+		'inc/blocks/register_block.php',
 	];
 
 	foreach ( $files as $include ) {
@@ -41,3 +42,4 @@ function include_inc_files() {
 }
 
 include_inc_files();
+

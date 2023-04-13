@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.block {
+    text-align: center;
+}
+
+.block-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -20px;
+}
+
+.block-list li {
+    list-style: none;
+}
+
+.block-item {
+    flex-basis: calc(33.33% - 40px);
+    margin: 0 20px 40px;
+    text-align: left;
+}
+
+.block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    /* set the desired height of the image container */
+}
+
+.block-image img {
+    max-height: 100%;
+    /* ensure the image scales down if it's larger than the container */
+    max-width: 100%;
+    /* ensure the image scales down if it's larger than the container */
+}
+
+.block-image img {
+    display: block;
+    max-width: 100%;
+}
+
+.block-content h3 {
+    text-align: center;
+
+}
+
+.block-item-title {
+    margin-top: 0;
+}
+
+.block-item-link {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.block-content {
+    text-align: center;
+}
+
+
+/* For small screens */
+@media (max-width: 767px) {
+    .block-list {
+        margin: 0 -10px;
+    }
+
+    .block-item {
+        flex-basis: calc(50% - 20px);
+        margin: 0 10px 30px;
+    }
+}
+
+/* For medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .block-item {
+        flex-basis: calc(50% - 30px);
+        margin: 0 15px 30px;
+    }
+}
+
+/* For large screens */
+@media (min-width: 992px) {
+    .block-item {
+        flex-basis: calc(33.33% - 40px);
+        margin: 0 20px 40px;
+    }
+}
